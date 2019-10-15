@@ -101,7 +101,7 @@
     
     fetchSearchResults = (updatedPageNo = '', query) =>{
         const pageNumber = updatedPageNo ? `&page=${updatedPageNo}`: '';
-        const searchUrl = `https://pixabay.com/api/?key=13928392-ce10b642ef49b8f7b9f6f13d5&q=${query}${pageNumber}`;	 
+        const searchUrl = `https://pixabay.com/api/?key=<Your key></Your>&q=${query}${pageNumber}`;	 
         if (this.cancel){
             this.cancel.cancel();
         }
